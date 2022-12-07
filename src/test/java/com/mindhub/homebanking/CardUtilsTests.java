@@ -27,13 +27,13 @@ public class CardUtilsTests {
 
     }
 
-    @Test
-    public void cardCvvIsCreated(){
-
-        int cardCvv = CardUtils.getCvv();
-
-        assertThat(cardCvv,is(not(0)));
-
-    }
+//    @Test
+//    public void cardCvvIsCreated(){
+//
+//        int cardCvv = CardUtils.getCvv();
+//
+//        assertThat(cardCvv,is(not(0)));
+//
+//    }
 
 }
