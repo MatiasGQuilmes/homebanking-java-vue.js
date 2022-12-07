@@ -3,7 +3,7 @@ const app = Vue.createApp({
     data(){
         return {
             apiClients: "/api/clients/current",
-            urlApi: "http://localhost:8080/api/accounts",
+            urlApi: "/api/accounts",
             accounts: [],
             clients: [],
             

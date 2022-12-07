@@ -6,7 +6,7 @@ const app = Vue.createApp({
             apellidoUsuario: "",
             clients: [],
             accounts: [],
-            urlApi: "http://localhost:8080/api/clients/current",
+            urlApi: "/api/clients/current",
             account: [],
 
             loans: [],
