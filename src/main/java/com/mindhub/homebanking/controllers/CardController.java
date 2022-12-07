@@ -52,7 +52,7 @@ public class CardController {
        if (types.size() >= 3){
           return new ResponseEntity<>("you can not have more than 3 cards", HttpStatus.FORBIDDEN);
        }else{
-           Card card1 = new Card(color,type,cardNumber, cvv , LocalDate.now(),LocalDate.now().plusYears(5), clientAuthenticate);
+           Card card1 = new Card(color,type,getRamdonNumber(1000,10000) +" " + getRamdonNumber(1000,10000) +" "+getRamdonNumber(1000,10000) +" " + getRamdonNumber(1000,10000), getRamdonNumber(100,1000) , LocalDate.now(),LocalDate.now().plusYears(5), clientAuthenticate);
            cardService.saveCard(card1);
            return new ResponseEntity<>("your account has been created successfully", HttpStatus.CREATED);
        }

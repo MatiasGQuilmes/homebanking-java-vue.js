@@ -38,7 +38,7 @@ const app = Vue.createApp({
                     this.loans = res.data;
                    
 
-
+                    console.log(this.loans);
 
                 })
         },
