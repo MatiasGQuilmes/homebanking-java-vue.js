@@ -1,0 +1,431 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+a{
+  text-decoration: none;
+}
+
+.body-home{
+    background: linear-gradient(135deg, #172a74, #21a9af);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+.login-register-dekstop{
+  display: none
+}
+
+.container-phone{
+  display: none;
+}
+/*  .login-register{
+    display: none!important;
+} */
+
+
+
+.main-home{
+    display: flex;
+    justify-content: center;
+    min-height: 79vh;
+}
+.container-main{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+}
+.container-text-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.text-title{
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    padding:1rem 0;
+    
+}
+.text-title h1{
+    font-weight: 300;
+}
+
+.text-description{
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    font-weight: lighter;
+    line-height: 29px;
+    padding:1rem 0;
+}
+
+
+
+.container-main{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+.img-mob-container{
+  width: 90%;
+  display: flex;
+  justify-self: center
+}
+
+.img-mob {
+  width: 100%;
+}
+
+
+.mini-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 23px;
+}
+
+.mini-header a{
+  color:white;
+  letter-spacing:3px;
+  font-size: 21px;
+}
+
+.mini-container-text-main {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mini-text-title{
+  color: #fff;
+  font-size: 15px;
+  text-align: center;
+  padding:1rem 0;
+  
+}
+
+.mini-text-title h1 {
+    font-weight: inherit;
+}
+
+.mini-text-description{
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  line-height: 29px;
+  padding:1rem 0;
+  width: 95%;
+}
+
+.mini-download{
+  border: 1px solid white;
+  color: white;
+  padding: 10px;
+  border-radius: 24px;
+}
+
+.mini-footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content:center;
+  color: white;
+}
+
+.mini-footer div {
+  padding: 2px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.mini-footer a{
+  color: white
+}
+
+
+.screen{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media (min-width: 768px){
+
+    .main-home {
+      min-height: 82vh;
+    }
+
+    .container-text-main{
+      align-items:unset
+    }
+
+    .text-title{
+      text-align: unset;
+    }
+
+    .text-description{
+      text-align: unset;
+    }
+
+    .img-mob-container {
+      justify-content: end;
+    }
+    .img-mob {
+      width: 65%;
+    }
+
+}
+
+
+
+@media (min-width: 1024px) {
+
+
+
+
+  .container-main{
+    flex-direction:unset
+  }
+  
+  .img-mob{
+    display: none;
+  }
+  .container-phone{
+    display: flex;
+  }
+
+   div.iphone-content {
+    position: relative;
+    max-width: 300px;
+    margin: 20px;
+    display: inline-block;
+}
+
+  .iphone-content  .screen{
+    position: absolute;
+    width: 16.32rem;
+    height: 28.8rem;
+    top: 4.5rem;
+    border-radius: 0px;
+    left: 6.4%;
+    border: 1px solid #444;
+    background-color: #aaa;
+    overflow: hidden;
+    background: url(../../assets/img/screen-content-iphone-6.jpg);
+    background-size: cover;
+    background-position: center;
+  /*   background: #184e8e; */
+    background: linear-gradient(135deg, #172a74, #21a9af);
+  }
+
+  .iphone-content .screen:before {
+    content: '';
+    background-color: #fff;
+    position: absolute;
+    width: 70%;
+    height: 140%;
+    top: -12%;
+    right: -60%;
+    transform: rotate(-19deg);
+    opacity: 0.2;
+  }
+
+  .img-cel{
+    position: absolute;
+    top: 27%;
+    left: 69.4%;
+  }
+
+  .img-cel img {
+    width: 14.3rem
+
+  }
+
+  .img-cel2{
+    position: absolute;
+    top: 57%;
+    left: 71%;
+  }
+  
+  .img-cel2 img {
+    width: 73%;
+  }
+
+
+}
+
+
+
+
+@media (min-width: 1200px){
+
+  .login-register{
+    display: none;
+  }
+  .hamburger{
+    display: none
+  }
+
+  .login-register-dekstop{
+    display: flex;
+  }
+
+  li{
+    list-style: none;
+    padding: 10px;
+  }
+
+}
+
+
+
+
+
+@media (min-width: 1440px){
+
+  .container-main{
+    width: 75%;
+  }
+
+}
+
+
+
+
+
+@media (min-width: 1920px){
+
+  .container-main{
+    width: 60%;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* BOTON LEARN MORE */
+
+/* From uiverse.io */ /* boton del home */
+button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+   }
+   
+   button.learn-more {
+    width: 14rem;
+    height: auto;
+   }
+   
+   button.learn-more .circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background: #282936;
+    border-radius: 1.625rem;
+   }
+   
+   button.learn-more .circle .icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #fff;
+   }
+   
+   button.learn-more .circle .icon.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+   }
+   
+   button.learn-more .circle .icon.arrow::before {
+    position: absolute;
+    content: "";
+    top: -0.29rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid #fff;
+    border-right: 0.125rem solid #fff;
+    transform: rotate(45deg);
+   }
+   
+   button.learn-more .button-text {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
+    color: white;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Raleway';
+    letter-spacing: 3px;
+    width: 13rem;
+   }
+   
+   button:hover .circle {
+    width: 100%;
+   }
+   
+   button:hover .circle .icon.arrow {
+    background: #fff;
+    transform: translate(1rem, 0);
+   }
+   
+   button:hover .button-text {
+    color: #fff;
+   }
+
+
+   /* ----------------------------------------------------- */

@@ -1,0 +1,63 @@
+select {
+    background: gainsboro;
+    width: 100%;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.account-origin-container{
+    width: 100%;
+}
+
+select, option{
+    cursor: pointer;
+}
+
+input[type="text"] {
+    border: 1px solid gainsboro;
+    padding: 5px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer
+}
+
+input[type="number"] {
+    border: 1px solid gainsboro;
+    padding: 5px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.form-cards div{
+    padding: 3px;
+    margin: 3px;
+}
+
+.cont-amount{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.cont-description{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.account-origin-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+
+@media (min-width: 1200px){
+    .form-cards {
+     
+        width: 60%;
+    }
+
+}

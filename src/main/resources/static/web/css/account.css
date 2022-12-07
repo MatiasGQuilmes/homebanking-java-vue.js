@@ -1,0 +1,798 @@
+
+a{
+    text-decoration: none;
+}
+
+
+.avatar {
+    display: inline-block;
+
+    vertical-align: text-bottom;
+}
+
+.Logout{
+    display: none;
+  
+}
+
+.logo {
+    display: inline-block;
+    width: 123px;
+ /*    height: 50px; */
+    border-radius: 29px;
+    text-align: left;
+    vertical-align: text-bottom;
+}
+
+.align-left {
+    display: flex;
+    padding: 8px;
+
+    align-items: center;
+}
+
+.main-movements{
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.tu-cuenta {
+    padding-left: 24px;
+    margin: 0;
+    text-decoration: none;
+
+    font-size: 32px;
+    font-weight: normal;
+
+    color: #2a333d;
+   /*  border-left: 6px solid #2cc197; */
+   border-left: 6px solid #184e8e;
+}
+
+.header {
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+    justify-content: space-between;
+    
+}
+
+.cuentas-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* width: 80%; */
+    justify-content: space-evenly;
+   /*  height: 100%; */;
+    width: 100%;
+    min-height: 100%;
+}
+
+/* .cuentas {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background: white;
+    color: black;
+    border-radius: 10px;
+    height:  80%;
+    font-family: 'Noto Sans Mono', monospace;
+    font-size: 14px;
+    padding: 21px 5px;
+} */
+
+.cuentas {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background: white;
+    color: black;
+    border-radius: 0 20px;
+    /* height:  44%; */
+    height: 81%;
+    font-size: 14px;
+    padding: 21px 5px;
+    font-weight: bolder;
+    margin-top: 10px;
+}
+.account-content {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+
+.movements-content {
+    background: #184e8e;
+    border-radius: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    color: white;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 1px;
+
+}
+
+.movements-content a{
+    text-decoration: none;
+    color: white;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.account-content {
+    width: 53%;
+}
+
+
+.account-content div {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+/*     padding: 3px; */
+}
+
+.movements-content a:hover {
+    background:  #21a9af;
+    color: white;
+}
+
+.movements-data{
+    display: flex
+}
+.cont-thead{
+    background-color: #184e8e;
+    color: white;
+    border-radius: 0 10px;
+    padding: 6px
+}
+
+tr.movements-data-thead {
+    display: flex;
+    justify-content: space-around;
+  
+    color: white;
+    padding: 6px;
+}
+
+th{
+    width: 33.3%;
+}
+
+.cuenta-info {
+    display: block;
+    width: 100%;
+}
+
+
+
+
+#nombre {
+    display: inline-block;
+    margin-right: 10px;
+    overflow: hidden;
+    letter-spacing: 1px;
+    font-size: 17px;
+
+    text-overflow: ellipsis;
+
+    color: #fff;
+}
+
+
+
+.links {
+    position: relative;
+
+    display: block;
+    padding: 0;
+
+    font-size: 16px;
+
+    cursor: pointer;
+    -webkit-transition: all .6s ease-in-out;
+       -moz-transition: all .6s ease-in-out;
+         -o-transition: all .6s ease-in-out;
+            transition: all .6s ease-in-out;
+    text-align: left;
+    vertical-align: text-bottom;
+    padding: 6px;
+
+    color: #666;
+    border: 0;
+    padding: 10px;
+    margin-left: 20px;
+    background-color: transparent;
+}
+
+.links:hover {
+    margin-left:50px;
+    text-decoration: none;
+    color: #2cc197;
+}
+
+.active{
+    color: #2cc197;
+}
+
+.green-container {
+    display: flex;
+    width: 65%;
+    box-sizing: border-box;
+
+    text-align: center;
+
+    color: white;
+    border-radius: 0 10px;
+   /*  background-color: #2cc197; */
+   background-color: #fff;
+
+    align-items: center;
+
+    padding: 10px
+}
+
+.menu-container {
+    display: block;
+   /*  width: 13%; */
+   font-weight: bolder;
+}
+
+.cuenta-container {
+    width: 35%;
+}
+
+
+
+
+#saldo-cuenta {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    overflow: hidden;
+
+    font-size: 6.5vw;
+
+    text-align: center;
+    text-overflow: ellipsis;
+}
+
+#limite-extraccion {
+    overflow: hidden;
+
+    font-size: 15px;
+
+    text-overflow: ellipsis;
+}
+
+.white-container {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    border: 1px solid #979797;
+    border-radius: 0 30px;
+    background-color: #fff;
+    justify-content: space-between;
+    margin-bottom: 3.9rem;
+}
+
+
+
+#check:checked ~ .login-register li {
+    display: block;
+    padding: 8px;
+}
+
+
+
+.green-container{
+    align-items: unset
+}
+.selec-account {
+       width: 100%;
+    background: #184e8e;
+  /*   border-radius: 0 10px; */
+    border-radius: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.btn-selec-account{
+    width: 100%;
+    border: none !important;
+}
+
+.btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show>.btn-secondary.dropdown-toggle {
+    color: #fff;
+    background-color: unset !important;
+    border-color:  unset !important;
+}
+.btn-secondary:not(:disabled):not(.disabled).active:focus, .btn-secondary:not(:disabled):not(.disabled):active:focus, .show>.btn-secondary.dropdown-toggle:focus {
+    box-shadow:unset !important;
+    border: none !important;
+  
+}
+
+.dropdown-menu.show {
+    width: 100%;
+    
+}
+
+button#dropdownMenuButton {
+    background-color: #184e8e !important;
+    border: unset !important;
+}
+
+.btn-secondary.focus, .btn-secondary:focus {
+    box-shadow:none !important
+}
+
+.bxl-twitter {
+    font-size: 17px;
+}
+
+footer.flex.flex-col.items-center.justify-between.p-6.bg-white.dark\:bg-gray-900.sm\:flex-row {
+    background-color: #184e8e !important;
+    
+}
+
+
+
+
+.cuentas:hover {
+    transform: scale(1.003);
+}
+
+.tu-cuenta:hover{
+    text-decoration: none;
+}
+
+.container-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.publi-app{
+    display: none;
+}
+
+
+.caja1 img{
+    width: 63px;
+    transition: 1s;
+}
+
+.caja1 img:hover {
+    transform: scale(1.6);
+    transition: 1s;
+}
+
+
+.caja2 {
+    display: flex;
+    flex-direction: column;
+/*     justify-content: center; */
+    align-items: center;
+    width: 50%;
+    text-align: center;
+}
+
+.caja2 div{
+    padding: 10px
+}
+.title-publi {
+    font-size: 24px;
+}
+
+.caja3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+a.btn-download {
+    background: white;
+    color: black;
+    padding: 10px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+a.btn-download:hover {
+    transform: scale(1.05)
+}
+
+
+.container-account-btn {
+    width: 100%;
+    display: flex;
+    height: 80%;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+   /*  padding: 10px 0 */
+   gap: 10px;
+}
+
+.createAccount {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    padding: 13px;
+  
+}
+
+a.btn-createAccount {
+    background: white;
+    color: black;
+    padding: 10px;
+    border-radius: 0 15px;
+    font-weight: bold;
+  
+}
+
+
+@media(max-width: 485px){
+    .account-content {
+        width: 95%;
+    }
+
+    .movements-content {
+
+        margin-top: 1rem;
+    }
+   
+}
+
+@media(min-width:485px) {
+
+    .cuentas{
+        flex-direction: unset;
+    }
+
+    .movements-content {
+        height: 100%;
+    }
+
+}
+
+@media(min-width:768px){
+
+    .movements-content{
+        width: 35% !important;
+
+    }
+
+    #check:checked ~ .login-register li {
+        display: block;
+        padding: 0 15px;
+    }
+    
+    .green-container {
+        padding: 20px;
+    }
+    
+
+
+}
+
+@media (min-width: 800px) {
+    
+
+/* 
+    .tu-cuenta {
+    
+        margin-left: -30px;
+       
+      
+    } */
+    
+    .links {
+    
+        margin: 20px 0;
+        margin-bottom: 30px;
+        padding: unset;
+        padding: unset;
+        margin-left: 2rem;
+
+    }
+  
+    .cuentas {
+       
+        flex-direction: unset;
+        height:  44%;
+        border-radius: 0 30px;
+      
+    }
+
+    .movements-content{
+        width: 35%;
+        height: 40%;
+    }
+
+
+
+    .selec-account {
+        border-radius: 0 30px;
+    }
+
+    .green-container {
+       
+        border-radius: 0 30px;
+     
+    }
+
+    .header {
+        width: 95%;
+        justify-content: end;
+    }
+
+
+    .publi-app {
+        background-color: #184e8e;
+        display: flex;
+        justify-content: space-around;
+        /* width: 90%; */
+        padding: 21px;
+        color: white;
+        border-radius: 0 30px;
+        border: 1px solid white;
+    }
+
+    .createAccount {
+
+        padding-right: 21px;
+    }
+}
+
+
+
+@media only screen and (max-width: 800px) {
+    .white-container {
+        flex-direction: column-reverse;
+    }
+
+    .green-container {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #saldo-cuenta {
+        font-size: 8.5vw;
+    }
+
+    .menu-container {
+        width: 100%;
+    }
+
+    .header {
+        margin-bottom: 10px;
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+}
+
+
+@media (min-width: 1024px){
+    #check:checked ~ .login-register li {
+        display: block;
+        padding: 0px 26px;
+    }
+
+    .cuentas {
+    
+        height:  40%;
+       
+    }
+}
+
+
+@media (min-width: 1200px) {
+
+    .login-register {
+        display: none;
+    }
+
+    .hamburger {
+        display: none
+    }
+
+    .Logout{
+        display: flex
+    }
+
+    .Logout:hover{
+        transform: scale(1.02)
+    }
+
+    .Logout a:hover{
+        text-decoration: none;
+      
+    }
+
+    .white-container {
+   
+        width: 75%;
+        justify-content: space-between;
+      
+
+    }
+    .header {
+        width: 75% ;
+        justify-content: end;
+    }
+
+
+    .movements-content{
+        width: 35%;
+    }
+
+    #check:checked ~ .login-register li {
+        display: block;
+        padding: 0px 33px;
+    }
+    .publi-app {
+    
+       /*  width: 75%; */
+     
+    }
+
+    .createAccount {
+     
+        padding-right: 31px;
+    }
+  
+}
+
+
+
+@media(min-width: 1440px){
+    #check:checked ~ .login-register li {
+        display: block;
+        padding: 0px 48px;
+    }
+
+    .cuentas{
+        width: 40%;
+        flex-direction: column;
+    
+        font-size: 16px;
+        height: 65%;
+    }
+
+    .movements-content{
+        width: 90% !important;
+        background-color:unset;
+        justify-content: end;
+    }
+
+    .movements-content a{
+        width: 100%;
+        background-color:#184e8e;
+        border-radius: 0 20px;
+        height: unset;    
+        letter-spacing: 2px;
+    }
+
+    
+    .account-content {
+        width: 90%;
+    }
+
+    
+    .container-account-btn{
+
+        flex-direction: unset;
+    }
+    
+   
+}
+
+
+
+
+
+
+@media(min-width: 1920px){
+    #check:checked ~ .login-register li {
+        display: block;
+        padding: 0px 70px;
+    }
+
+    #nombre {
+        font-size: 20px;
+      
+    }
+
+    .tu-cuenta {
+
+        font-size: 40px;
+    
+    }
+
+    .links {
+      
+        font-size: 17px;
+    }
+
+    .white-container {
+        border-radius: 0 30px;
+        width: 90% !important;
+    }
+
+   .selec-account {
+        width: 85%;
+    } 
+
+    .green-container {
+        align-items: unset;
+        display: flex;
+        justify-content: end;
+        border-radius: 0 30px;
+        width: 90%;
+    }
+
+    .createAccount {
+ 
+        margin: 10px;
+    }
+    
+    a.btn-createAccount {
+     
+        margin-right: 4rem;
+    }
+
+    div#carouselExampleIndicators {
+        width: 90%;
+    }
+
+    .carousel-control-next, .carousel-control-prev {
+ 
+        width: 10%;
+     
+        opacity: unset ;
+       
+    }
+
+    .publi-app {
+        width: 100%;
+    }
+    .cuentas {
+        width: 29%;
+    }
+
+    .header {
+        width: 90%;
+        justify-content: end;
+    }
+
+    .createAccount {
+        padding-right: 6.4rem;
+    }
+
+}
+
+
+
+/* ---- cuenta ---- */
+

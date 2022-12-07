@@ -1,0 +1,239 @@
+   <!-- component -->
+   <!DOCTYPE html>
+   <html lang="es">
+     <head>
+       <meta charset="UTF-8" />
+       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300&display=swap" rel="stylesheet">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+       <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+       <title>account</title>
+       <link rel="stylesheet" href="./css/tailwind.css">
+       <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+       <link rel="stylesheet" href="./css/base.css">
+       <link rel="stylesheet" href="./css/hamburgers.css">
+       <link rel="stylesheet" href="./css/account.css">
+      
+     </head>
+     <body >
+   
+       <div id="app">
+      
+       <header>
+         <nav class="nav">
+             <a class="logo" href="./index.html">MBANK</a>
+            <!--  <a href="./index.html" class="logo-content">
+                 <img src="./assets/img/Black__White_Monogram_Initial_Letter_M_Logo_2.png" alt=""> 
+             </a> -->
+             <input type="checkbox" id="check">
+             <label for="check" class="hamburger hamburger--squeeze " >
+              <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+              </span>
+              </label>
+             <ul class="login-register ">
+                 
+                 <li><a class="register" @click="logout" href="./index.html">Log Out</a></li> 
+                 <div class="menu-content">
+                   <li><a href="./accounts.html " class="links active" >Your Accounts</a></li>
+                   <li><a href="./loans.html" class="links" >Loans</a></li>
+                   <li><a href="./cards.html" class="links" >Cards</a></li>
+                   <li><a href="./transfers.html" class="links" >Transfers</a></li>
+                   <li><a href="./loan-application-id.html" class="links" >apply for loan</a></li>
+                   <li><a class="links" >Deposit money</a></li>
+                 </div>
+              
+                   
+             </ul>
+
+             <ul class="Logout">
+                 
+               <li><a class="register" @click="logout" href="./index.html">Log Out</a></li> 
+           
+           </ul>
+         </nav>
+     </header>
+
+         <main >
+           
+                 <div class="container-menu">
+                     <div class="header">
+                           
+                       <!--  <img class="logo" src="./assets/img/logo-mg.png"/> -->
+                       <div class="align-left" >
+                         <span id="nombre" v-if="nombreUsuario !== 'ADMIN'">Welcome {{nombreUsuario}} {{apellidoUsuario}} !</span>
+                         <span id="nombre" v-if="nombreUsuario == 'ADMIN'" >Welcome {{nombreUsuario}}!</span>
+                         <!-- <img class="avatar" src="img/avatar.svg"/> -->
+                       </div>
+                     </div>
+                     <div class="white-container">
+                       <div class="menu-container">
+                         <a href="./accounts.html" class="tu-cuenta">Menu</a>
+                         <a href="./accounts.html " class="links active" >Your Accounts</a>
+                         <a href="./loans.html" class="links" >Loans</a>
+                         <a href="./cards.html" class="links" >Cards</a>
+                         <a a href="./transfers.html" class="links" >Transfers</a>
+                         <a href="./loan-application-id.html" class="links" >apply for loan</a>
+                         <a class="links" >Deposit money</a>
+                       </div>
+                       <div class="green-container">
+                         <div class="dropdown selec-account">
+                         
+                           <div class="cuentas-container">
+                             <div class="container-account-btn">
+                               <div class="cuentas" v-for="account in accounts">  
+                         
+                                   <div class="account-content">     
+                                 
+                                     <h1 class="no-prest text-danger" v-if="accounts.length == 0">No tienes ningun accounts!</h1>                   
+                                     <div class="number-account-div"><span>Number Account :</span> <span>{{account.number}}</span> </div>
+                                     <div>Balance : <span>$ {{balanceFormateado(account.balance).split("A")[0]}}</span> </div>
+                                     <div>Creation Date : <span> {{account.creationDate.split("T")[0]}}</span></div>
+                                   </div> 
+         
+                                   <div class="movements-content">                      
+                                       <a :href="'./movements.html?id='+account.id">Movements</a>
+                                   </div>
+                               </div>
+                               <div class="createAccount">
+                                 <a class="btn-createAccount" href="#" @click="createAccount" v-if="accounts.length < 3">Create Account</a>
+                               </div> 
+                             </div>
+                              
+                           </div>
+       
+                         </div>
+                 
+                       </div>
+                   </div>
+               
+             <!--   <div class="publi-app">
+                 <div class="caja1">
+                     <img src="./assets/img/iphone.svg" alt="">
+                 </div>
+                 <div class="caja2">
+                     <div class="title-publi">
+                       <p>¡ download your homebanking !</p>
+                     </div>
+                     <div class="text-publi">
+                       <p>now you can access our mobile application, to be able to navigate in your homebanking</p>
+                     </div>
+                 </div>
+                 <div  class="caja3">
+                     <div class="click-here"><p>¡ click here !</p></div>
+                     <a href="https://play.google.com/store/apps?hl=es_AR&gl=US" class="btn-download">Download Now</a>
+                 </div>
+               </div> -->
+               <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="publi-app">
+                      <div class="caja1">
+                          <img src="./assets/img/iphone.svg" alt="">
+                      </div>
+                      <div class="caja2">
+                          <div class="title-publi">
+                            <p>¡ download your homebanking !</p>
+                          </div>
+                          <div class="text-publi">
+                            <p>now you can access our mobile application, to be able to navigate in your homebanking</p>
+                          </div>
+                      </div>
+                      <div  class="caja3">
+                          <div class="click-here"><p>¡ click here !</p></div>
+                          <a href="https://play.google.com/store/apps?hl=es_AR&gl=US" class="btn-download">Download Now</a>
+                      </div>
+                    </div> 
+                  </div>
+                  <div class="carousel-item">
+                    <div class="publi-app">
+                      <div class="caja1">
+                          <img src="./assets/img/iphone.svg" alt="">
+                      </div>
+                      <div class="caja2">
+                          <div class="title-publi">
+                            <p>¡ download your homebanking !</p>
+                          </div>
+                          <div class="text-publi">
+                            <p>now you can access our mobile application, to be able to navigate in your homebanking</p>
+                          </div>
+                      </div>
+                      <div  class="caja3">
+                          <div class="click-here"><p>¡ click here !</p></div>
+                          <a href="https://play.google.com/store/apps?hl=es_AR&gl=US" class="btn-download">Download Now</a>
+                      </div>
+                    </div> 
+                  </div>
+                  <div class="carousel-item">
+                    <div class="publi-app">
+                      <div class="caja1">
+                          <img src="./assets/img/iphone.svg" alt="">
+                      </div>
+                      <div class="caja2">
+                          <div class="title-publi">
+                            <p>¡ download your homebanking !</p>
+                          </div>
+                          <div class="text-publi">
+                            <p>now you can access our mobile application, to be able to navigate in your homebanking</p>
+                          </div>
+                      </div>
+                      <div  class="caja3">
+                          <div class="click-here"><p>¡ click here !</p></div>
+                          <a href="https://play.google.com/store/apps?hl=es_AR&gl=US" class="btn-download">Download Now</a>
+                      </div>
+                    </div> 
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+         </main>
+   
+       
+         <footer>
+           <div class="container-logo">
+               <a href="./home.html">Mati Bank</a>
+           </div>
+   
+           <div class="container-copyright">
+               <span>© Copyright 2022. All Rights Reserved.</span>
+           </div>
+   
+           <div class="container-icons">   
+               <a href="https://twitter.com/home/"><i class='bx bxl-twitter'></i></a>
+               <a href="https://www.instagram.com/"><i class='bx bxl-instagram'></i></a>
+               <a href="https://www.facebook.com/"><i class='bx bxl-facebook-circle'></i></a>     
+           </div>
+       </footer>
+   
+   
+     </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue@3/dist/vue.global.js"></script>
+        <script src="./javascript/wow.min.js"></script> 
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+        <script src="./javascript/accounts.js"></script>
+        <script src="./javascript/hamburgers.js"></script>
+     </body>
+   </html>
+   
+   
+   
+   
+   

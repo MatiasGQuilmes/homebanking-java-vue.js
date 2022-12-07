@@ -1,0 +1,134 @@
+.select-debit-credit{
+    display: flex
+}
+
+
+.type-card{
+    display: flex
+}
+
+
+.form-cards{
+    height: 90%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+ 
+}
+
+.title-create-card {
+    
+    display: flex;
+    width: 90%;
+    margin-top: 1rem;
+}
+
+.select-debit-credit {
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+
+}
+
+.type-card {
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+ 
+}
+
+.selectType {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+  
+}
+
+.selectColor {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+  
+}
+
+
+.select-credit {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.select-debit {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.type-silver{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.type-gold{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.type-titanium{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+label {
+    padding: 0 5px;
+    cursor: pointer;
+}
+
+input{
+    cursor: pointer;
+}
+
+
+.card-create{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background: white;
+    color: black;
+    border-radius: 0 20px;
+    /* height: 44%; */
+    height: 81%;
+    font-size: 14px;
+    padding: 21px 5px;
+    font-weight: bolder;
+    margin-top: 10px;
+}
+
+.title-create {
+    display: flex;
+  /*   justify-content: center; */
+    width: 85%;
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+@media(min-width: 1920px){
+   /*  .form-cards {
+   
+        width: 60%;
+       
+    } */
+    .card-create{
+        width: 50%;
+    }
+}

@@ -1,0 +1,187 @@
+
+a{
+    text-decoration: none !important;
+    color: white;
+}
+.movements{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  /*   justify-content: space-around; */
+    background: white;
+    color: black;
+  /*   border-radius: 0 10px; */
+    border-radius: 0 30px;
+    height: 92%;
+    font-weight: bolder;
+    padding: 21px 5px;
+
+}
+
+
+.number-account {
+    border-bottom: 1px solid;
+    width: 100%;
+    font-size: 16px;
+    background-color:#184e8e;
+  /*   background: #172a74; */
+    color: white;
+    border-radius: 0 10px;
+    justify-content: center !important;
+}
+.movements-account{
+    width: 100%;
+   /*  padding: 15px 0; */
+}
+
+.movements-content1{
+    height: 100%;
+    background: #184e8e;
+    border-radius: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    padding: 13px;
+    color: white;
+    cursor: pointer;
+    width: 7rem;
+    letter-spacing: 1px;
+}
+
+
+.movements-content1:hover{
+    background: #21a9af;
+    color: white;
+}
+
+.number-account {
+    padding: 6px;
+}
+
+
+.loans-account{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.movements-data-thead {
+    display: flex;
+    justify-content: space-around !important;
+}
+
+.box3 {
+    height: 100%;
+    width: 90%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.account-content table{
+    width: 100%;
+}
+
+.account-content td{
+    width: 100%;
+   /*  background-color: rgb(242 242 242); */
+   font-size: 12px;
+    padding: 5px 0px;
+}
+
+.type-credit-debit{
+    display: none;
+}
+
+.text-danger {
+    color: #dc3545!important;
+    border: none;
+    margin-top: 1rem;
+    font-size: 17px;
+    font-weight: bolder;
+    letter-spacing: 1px;
+}
+
+.account-content-movements{
+    display: flex;
+    flex-direction: column;
+    align-items: center !important;
+    justify-content: center;
+    padding: 15px 0px;
+
+}
+
+
+.movements-account-container {
+    display: flex;
+    justify-content: end;
+    padding: 15px 0;
+    width: 100%;
+}
+
+.CREDIT{
+    color: green !important
+}
+
+.DEBIT{
+    color: red !important
+}
+
+
+.title-movements {
+    width: 90%;
+    font-size: 20px;
+    text-align: initial;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.title-movements span {
+    padding-right: 5px;
+}
+
+.movements-account {
+    flex-direction: column;
+}
+
+@media (min-width: 480px) {
+    .account-content {
+        width: 90%;
+    }
+
+    .account-content td{
+       font-size: 15px;
+    
+    }
+    
+}
+
+@media (min-width: 1024px) {
+    .movements{
+
+        height: 80%;
+        width: 85%;
+
+    }
+
+    .type-credit-debit{
+        display: flex;
+        justify-content: center;
+        border-radius: 0 10px ;
+    }
+    
+}
+
+@media (min-width: 1200px) {
+    .header {
+        width: 75% !important;
+        justify-content: end;
+    }
+}
+
+@media (min-width: 1920px){
+    .header {
+        width: 90% !important;
+        justify-content: end;
+    }
+}

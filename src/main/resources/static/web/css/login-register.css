@@ -1,0 +1,61 @@
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
+#app{
+    min-height: 0  !important;
+}
+
+.login-main{
+    display: flex;
+    justify-content:center
+}
+
+a.block.w-full.max-w-xs.mx-auto.bg-indigo-500.hover\:bg-indigo-700.focus\:bg-indigo-700.text-white.rounded-lg.px-3.py-3.font-semibold {
+    text-align: center;
+    background: #172a74;
+    text-decoration: none;
+    letter-spacing: 3px;
+}
+a.block.w-full.max-w-xs.mx-auto.bg-indigo-500.hover\:bg-indigo-700.focus\:bg-indigo-700.text-white.rounded-lg.px-3.py-3.font-semibold:hover{
+    transform: scale(1.003);
+}
+.hidden.md\:block.w-1\/2.bg-indigo-500.py-10.px-10 {
+    /* background: linear-gradient(135deg, #21a9af, #172a74); */
+    background: none;
+    width: 29rem;
+}
+
+
+.min-h-screen {
+    min-height: 83vh;
+}
+
+.p-6 {
+    padding: 0.5rem;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer
+}
+
+.md\:w-1\/2 {
+    
+    width: 100%;
+}
+
+.flex {
+    justify-content: center;
+}
+
+
+@media (max-width: 320px) {
+    .flex.-mx-3 {
+        flex-direction: column;
+    }
+    
+    .w-1\/2.px-3.mb-5 {
+        width: 100%;
+    }
+}
