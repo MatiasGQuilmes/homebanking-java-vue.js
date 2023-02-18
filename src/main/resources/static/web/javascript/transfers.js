@@ -46,13 +46,29 @@ const app = Vue.createApp({
         },
         createTransfer(){
 
-                axios.post(`/api/transactions?amount=${this.amount}&description=${this.description}&accountOrigin=${this.accountOrigin}&accountDestiny=${this.accountDestiny}`).then(()=>   {  Swal.fire(
-                    'congratulation',
-                    'success',
-                    ),setTimeout(()=>{
-                        window.location.pathname='/web/accounts.html'
-                    },"2000")})
-         
+                if(this.amount === 0 || this.description === "" || this.accountOrigin === ""|| this.accountDestiny === "" ){
+                    Swal.fire({
+                        icon: 'warning',
+                        title: 'Todos los campos son obligatorios'
+                    })
+                }else{
+                    axios.post(`/api/transactions?amount=${this.amount}&description=${this.description}&accountOrigin=${this.accountOrigin}&accountDestiny=${this.accountDestiny}`)
+                    .then(()=>{  Swal.fire(
+                        'congratulation',
+                        'success',
+                        ),setTimeout(()=>{
+                            window.location.pathname='/web/accounts.html'
+                        },"2000")})
+                    .catch(()=>{
+                        Swal.fire({
+                            icon: 'warning',
+                            title: 'the account destiny not exist'
+                        })
+                    })
+             
+                }
+
+               
         },
         alerta(){
             Swal.fire({
