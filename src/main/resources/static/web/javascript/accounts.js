@@ -29,19 +29,19 @@ const app = Vue.createApp({
         axios.get(URL) //hace una peticion de tipo get a una url, si existe te devuelve una promesa y si no existe te da un error 404 o 405
             .then(res => {
                 this.clients = res.data
-                console.log(this.clients);
+         
                 this.accounts = this.clients.accounts.sort(this.order)
-                console.log(this.accounts);
+            
              
                 this.nombreUsuario = this.clients.firstName
                 this.apellidoUsuario = this.clients.lastName
                 
                 this.loans = this.clients.loans.sort(this.order)
                 
-                console.log(this.loans);
+        
 
                 this.cards = this.clients.cards.sort(this.order)
-                console.log(this.cards);
+         
 
                 this.account = this.accounts.find(e => e.id == this.id)
 

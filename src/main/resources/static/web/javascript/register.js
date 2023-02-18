@@ -25,6 +25,11 @@ const app = Vue.createApp({
             }
             axios.post('/api/clients',`firstName=${this.firstName}&lastName=${this.lastName}&email=${this.email}&password=${this.password}`)
             .then(()=> this.login())
+            .catch(err => Swal.fire(
+                err.response.data,
+                ' ',
+                'error'
+              ))
           
         }
 

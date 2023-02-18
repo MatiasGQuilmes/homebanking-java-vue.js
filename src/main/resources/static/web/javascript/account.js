@@ -26,9 +26,9 @@ const app = Vue.createApp({
                 .then(res => {
                     this.accounts = res.data
                     this.account = this.accounts.find(e => e.id == this.id)
-                    console.log(this.account);
+           
                     this.transactions = this.account.transactions.sort(this.order)
-                    console.log(this.transactions);
+            
 
             
             }).catch(err => {console.error(err);})     
