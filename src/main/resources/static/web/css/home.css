@@ -29,7 +29,11 @@ a{
     display: none!important;
 } */
 
+.index #check:checked ~ .login-register {
 
+  background: unset 
+
+}
 
 .main-home{
     display: flex;

@@ -6,6 +6,12 @@ body{
     min-height: 0  !important;
 }
 
+.login-register-body #check:checked ~ .login-register {
+
+    background: unset 
+  
+}
+
 .login-main{
     display: flex;
     justify-content:center
