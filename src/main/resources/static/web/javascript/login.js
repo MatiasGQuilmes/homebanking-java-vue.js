@@ -13,18 +13,22 @@ const app = Vue.createApp({
     methods:{
    
         login(){
-
-            if(this.email == ""|| this.password == ""){
+             if(this.email == ""){
                 Swal.fire({
                     icon: 'warning',
-                    title: 'Todos los campos son obligatorios'
+                    title: 'The email is required'
+                })
+            }else if(!this.password){
+                Swal.fire({
+                    icon: 'warning',
+                    title: 'The password is required'
                 })
             }else{
                 axios.post('/api/login',`email=${this.email}&password=${this.password}`)
                 .then(()=> window.location.href = "/web/accounts.html")  
                 .catch(() => Swal.fire({
                     icon: 'warning',
-                    title: 'Credenciales Invalidas'
+                    title: 'invalid credentials'
                 }))
             }
 
