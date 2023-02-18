@@ -41,6 +41,10 @@
     padding: 2px;
 }
 
+.type-card img{
+    margin-right: 20px;
+}
+
 .selectType {
     width: 100%;
     display: flex;
