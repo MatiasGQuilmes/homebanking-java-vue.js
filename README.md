@@ -1,6 +1,9 @@
 # homebanking-java-vue.js
 
 proyecto individual, tecnologias utilizadas: Java, Spring Boot, JPA, Hibernate, Gradle, Vue.js, Html, Css, JavasCript, Bootstrap, PostGreSQL / H2-console 
-Aplicando metodologias agiles SCRUM.
+Aplicando metodologias agiles SCRUM. 
+
 
 link: https://homebanking-java-vuejs-production.up.railway.app/web/index.html
+
+****aclaracion: tiene pocos commits porque lo subi a github una vez terminado****
