@@ -42,7 +42,7 @@
                     <li><a href="./cards.html" class="links" >Cards</a></li>
                     <li><a href="./transfers.html" class="links" >Transfers</a></li>
                     <li><a href="./loan-application-id.html" class="links" >apply for loan</a></li>
-                    <li><a class="links" >Deposit money</a></li>
+                  
                 </ul>
 
                 <ul class="Logout">
@@ -70,7 +70,7 @@
              <a href="./cards.html" class="links">Cards</a>
              <a href="./transfers.html" class="links">Transfers</a>
              <a href="./loan-application-id.html" class="links" >apply for loan</a>
-             <a class="links">Deposit money</a>
+       
             </div>
             <div class="green-container">
               <div class="dropdown selec-account">
@@ -92,7 +92,7 @@
                         
                                  <table>
                                      <tr :class="transaction.type" class="movements-data" v-for="transaction of transactions">
-                                         <td>{{transaction.date.split(".")[0].split("T").toString().split(":57")[0].replace(",", " | ").split("2022-")[1]}}</td>
+                                         <td>{{transaction.date.split(".")[0].split("T").toString().split(":57")[0]}}</td>
                                          <td>{{transaction.description}}</td>
                                          <td>{{transaction.amount}}$</td>
                                          <td >{{transaction.type}}</td>
@@ -135,80 +135,7 @@
                   <a href="https://play.google.com/store/apps?hl=es_AR&gl=US" class="btn-download">Download Now</a>
               </div>
             </div> -->
-            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
-              <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-              </div>
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <div class="publi-app">
-                    <div class="caja1">
-                        <img src="./assets/img/iphone.svg" alt="">
-                    </div>
-                    <div class="caja2">
-                        <div class="title-publi">
-                          <p>¡ download your homebanking !</p>
-                        </div>
-                        <div class="text-publi">
-                          <p>now you can access our mobile application, to be able to navigate in your homebanking</p>
-                        </div>
-                    </div>
-                    <div  class="caja3">
-                        <div class="click-here"><p>¡ click here !</p></div>
-                        <a href="https://play.google.com/store/apps?hl=es_AR&gl=US" class="btn-download">Download Now</a>
-                    </div>
-                  </div> 
-                </div>
-                <div class="carousel-item">
-                  <div class="publi-app">
-                    <div class="caja1">
-                        <img src="./assets/img/iphone.svg" alt="">
-                    </div>
-                    <div class="caja2">
-                        <div class="title-publi">
-                          <p>¡ download your homebanking !</p>
-                        </div>
-                        <div class="text-publi">
-                          <p>now you can access our mobile application, to be able to navigate in your homebanking</p>
-                        </div>
-                    </div>
-                    <div  class="caja3">
-                        <div class="click-here"><p>¡ click here !</p></div>
-                        <a href="https://play.google.com/store/apps?hl=es_AR&gl=US" class="btn-download">Download Now</a>
-                    </div>
-                  </div> 
-                </div>
-                <div class="carousel-item">
-                  <div class="publi-app">
-                    <div class="caja1">
-                        <img src="./assets/img/iphone.svg" alt="">
-                    </div>
-                    <div class="caja2">
-                        <div class="title-publi">
-                          <p>¡ download your homebanking !</p>
-                        </div>
-                        <div class="text-publi">
-                          <p>now you can access our mobile application, to be able to navigate in your homebanking</p>
-                        </div>
-                    </div>
-                    <div  class="caja3">
-                        <div class="click-here"><p>¡ click here !</p></div>
-                        <a href="https://play.google.com/store/apps?hl=es_AR&gl=US" class="btn-download">Download Now</a>
-                    </div>
-                  </div> 
-                </div>
-              </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-            </div>
+           
       </main>
          <footer>
           <div class="container-logo">

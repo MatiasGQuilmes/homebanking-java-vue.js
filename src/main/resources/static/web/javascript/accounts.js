@@ -54,7 +54,16 @@ const app = Vue.createApp({
 
         },
         createAccount(){
-            axios.post("/api/clients/current/accounts").then(()=>this.loadData(this.urlApi))
+            axios.post("/api/clients/current/accounts").then(()=>
+                this.loadData(this.urlApi),
+                Swal.fire({
+                    position: 'top-end',
+                    icon: 'success',
+                    title: 'account created successfully',
+                    showConfirmButton: false,
+                    timer: 1500
+                })
+            )
         },
         balanceFormateado(numero){
             return new Intl.NumberFormat('de-DE', { style: 'currency', currency: 'ARS' }).format(numero)

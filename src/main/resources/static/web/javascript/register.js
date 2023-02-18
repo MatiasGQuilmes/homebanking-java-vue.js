@@ -17,7 +17,15 @@ const app = Vue.createApp({
         },
         register(){
 
-            axios.post('/api/clients',`firstName=${this.firstName}&lastName=${this.lastName}&email=${this.email}&password=${this.password}`).then(()=> this.login())
+            if(!this.firstName || !this.lastName || !this.email || !this.password ||  !this.email|| !this.password){
+                Swal.fire({
+                    icon: 'warning',
+                    title: 'todos los campos son obligatorios'
+                })
+            }
+            axios.post('/api/clients',`firstName=${this.firstName}&lastName=${this.lastName}&email=${this.email}&password=${this.password}`)
+            .then(()=> this.login())
+          
         }
 
 
